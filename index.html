@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bl1ng Store | CS2 Premier & Software Infrastructure</title>
+    <meta name="description" content="Bl1ng Store — Cuentas CS2 Premier Ready NFA & FA, cheats 100% legales y VAC Safe. Entrega inmediata vía Discord con garantía activa de 24 horas.">
+    
+    <!-- Fuentes de grado profesional y monospace técnico -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Vector Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Estilos de Bl1ng Store -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Canvas de Partículas y Malla Táctica de Fondo -->
+    <div class="ambient-glow glow-cyan"></div>
+    <div class="ambient-glow glow-secondary"></div>
+    <div class="ambient-glow glow-bottom"></div>
+    <canvas id="bg-canvas"></canvas>
+    <div class="grid-overlay"></div>
+    <div class="vignette-overlay"></div>
+
+    <!-- Barra de Estado Técnico y Marquee -->
+    <div class="top-status-strip">
+        <div class="status-meta">
+            <span class="system-indicator">
+                <span class="pulse-beacon"></span>
+                <span class="mono-code">SYS_STATUS :: OPTIMAL</span>
+            </span>
+            <span class="meta-sep">/</span>
+            <span class="mono-code telemetry">NODE_LATENCY :: &lt;14ms</span>
+            <span class="meta-sep">/</span>
+            <span class="mono-code protocol">PROTOCOL :: CS2_PREMIER_V26</span>
+        </div>
+        <div class="ticker-wrapper">
+            <div class="marquee-track">
+                <span>[DISPATCH_24/7] :: ENTREGA AUTOMATIZADA INMEDIATA</span>
+                <span class="track-sep">///</span>
+                <span>[STOCK_VERIFIED] :: CUENTAS CS2 PREMIER READY NFA &amp; FA</span>
+                <span class="track-sep">///</span>
+                <span>[WARRANTY_SYSTEM] :: COBERTURA ACTIVA DE 24 HORAS CON SOPORTE TÉCNICO</span>
+                <span class="track-sep">///</span>
+                <span>[VAC_INTEGRITY] :: Cheats 100% Legales y VAC Safe</span>
+                <span class="track-sep">///</span>
+                <span>[ENCRYPTED_CHECKOUT] :: ATENCIÓN PERSONALIZADA POR TICKETS EN DISCORD</span>
+                <span class="track-sep">///</span>
+                <span>[DISPATCH_24/7] :: ENTREGA AUTOMATIZADA INMEDIATA</span>
+                <span class="track-sep">///</span>
+                <span>[STOCK_VERIFIED] :: CUENTAS CS2 PREMIER READY NFA &amp; FA</span>
+                <span class="track-sep">///</span>
+                <span>[WARRANTY_SYSTEM] :: COBERTURA ACTIVA DE 24 HORAS CON SOPORTE TÉCNICO</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- NAVBAR NAVEGACIÓN TÁCTICA -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#inicio" class="nav-logo" id="nav-logo-link">
+                <div class="logo-terminal-bracket">[</div>
+                <div class="logo-symbol-wrapper">
+                    <span class="symbol-hash">#</span>
+                </div>
+                <div class="logo-text-group">
+                    <span class="brand-title">BL<span class="cyan-accent">1</span>NG</span>
+                    <span class="brand-spec">INFRASTRUCTURE</span>
+                </div>
+                <div class="logo-terminal-bracket">]</div>
+            </a>
+
+            <nav class="nav-menu">
+                <a href="#inicio" class="nav-link active">
+                    <span class="nav-index">01.</span> INICIO
+                </a>
+                <a href="#categorias" class="nav-link">
+                    <span class="nav-index">02.</span> CATÁLOGO
+                </a>
+                <a href="#ventajas" class="nav-link">
+                    <span class="nav-index">03.</span> ESPECIFICACIONES
+                </a>
+                <a href="#protocolo" class="nav-link">
+                    <span class="nav-index">04.</span> PROTOCOLO
+                </a>
+                <a href="#faq" class="nav-link">
+                    <span class="nav-index">05.</span> FAQ
+                </a>
+                <a href="https://discord.gg/HJCc5GmuNV" target="_blank" class="nav-discord-btn" id="btn-discord-nav">
+                    <i data-lucide="terminal"></i>
+                    <span>DISCORD TICKET</span>
+                    <span class="btn-arrow-corner">↗</span>
+                    <div class="btn-shine"></div>
+                </a>
+            </nav>
+
+            <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Navigation">
+                <span class="toggle-line"></span>
+                <span class="toggle-line"></span>
+            </button>
+        </div>
+
+        <!-- Menú Móvil -->
+        <div class="mobile-menu" id="mobile-menu">
+            <a href="#inicio" class="mob-link"><span>01.</span> Inicio</a>
+            <a href="#categorias" class="mob-link"><span>02.</span> Catálogo de Productos</a>
+            <a href="#ventajas" class="mob-link"><span>03.</span> Especificaciones &amp; Garantía</a>
+            <a href="#protocolo" class="mob-link"><span>04.</span> Protocolo de Compra</a>
+            <a href="#faq" class="mob-link"><span>05.</span> Preguntas Frecuentes</a>
+            <a href="https://discord.gg/HJCc5GmuNV" target="_blank" class="mob-discord-btn">
+                <i data-lucide="terminal"></i> INGRESAR AL DISCORD
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section id="inicio" class="hero">
+            <div class="hero-left fade-in">
+                
+                <div class="terminal-badge">
+                    <span class="badge-prefix">&gt;&gt;</span>
+                    <span class="badge-label">STOCK VERIFICADO :: CS2 PREMIER</span>
+                    <span class="badge-status">[ONLINE]</span>
+                </div>
+
+                <h1 class="hero-title">BL<span class="cyan-accent-huge">1</span>NG <span class="hero-store-word">STORE</span></h1>
+
+                <p class="hero-subtitle">
+                    Cuentas NFA y FA listas para Premier, Boost Acc y los mejores Che4ts para CS2
+                </p>
+
+                <!-- Data Telemetry Matrix -->
+                <div class="hero-stats-matrix">
+                    <div class="matrix-cell">
+                        <div class="cell-header">
+                            <span class="matrix-label">VAC_STATUS</span>
+                            <span class="matrix-code">SYS_01</span>
+                        </div>
+                        <div class="cell-value">
+                            <span class="stat-number" data-target="99.9">0</span><span class="stat-symbol">%</span>
+                        </div>
+                        <span class="cell-sub">SECURE / SAFE</span>
+                    </div>
+
+                    <div class="matrix-divider"></div>
+
+                    <div class="matrix-cell">
+                        <div class="cell-header">
+                            <span class="matrix-label">WARRANTY_CLOCK</span>
+                            <span class="matrix-code">SYS_02</span>
+                        </div>
+                        <div class="cell-value">
+                            <span class="stat-number" data-target="24">0</span><span class="stat-symbol">h</span>
+                        </div>
+                        <span class="cell-sub">COBERTURA ACTIVA</span>
+                    </div>
+
+                    <div class="matrix-divider"></div>
+
+                    <div class="matrix-cell">
+                        <div class="cell-header">
+                            <span class="matrix-label">DISPATCH_TIME</span>
+                            <span class="matrix-code">SYS_03</span>
+                        </div>
+                        <div class="cell-value">
+                            <span class="stat-symbol">&lt;&nbsp;</span><span class="stat-number" data-target="5">0</span><span class="stat-symbol">m</span>
+                        </div>
+                        <span class="cell-sub">ENTREGA PROMEDIO</span>
+                    </div>
+                </div>
+
+                <!-- Call to actions -->
+                <div class="hero-actions">
+                    <a href="https://discord.gg/HJCc5GmuNV" target="_blank" class="btn btn-primary-tactical" id="hero-btn-discord">
+                        <span class="btn-bullet">■</span>
+                        <span>SOLICITAR POR DISCORD</span>
+                        <span class="btn-key">[ENTER]</span>
+                        <div class="btn-glow-border"></div>
+                    </a>
+                    <a href="#categorias" class="btn btn-ghost-tactical" id="hero-btn-catalog">
+                        <span class="btn-bullet-cyan">▸</span>
+                        <span>EXPLORAR CATÁLOGO</span>
+                        <span class="btn-arrow-right">→</span>
+                    </a>
+                </div>
+
+                <!-- Live Dispatch Ticker -->
+                <div class="live-dispatch-bar">
+                    <span class="feed-tag">[EVENT_LOG]</span>
+                    <div class="feed-scroller" id="feed-scroller">
+                        <span class="feed-item active">
+                            <span class="feed-time">02:44:10</span>
+                            <span class="feed-target">ORD#7814</span> :: Premier FA (Full Access) entregada con éxito
+                        </span>
+                        <span class="feed-item">
+                            <span class="feed-time">02:41:22</span>
+                            <span class="feed-target">ORD#7813</span> :: Variedad en Cheats — Ticket Cerrado
+                        </span>
+                        <span class="feed-item">
+                            <span class="feed-time">02:37:05</span>
+                            <span class="feed-target">ORD#7812</span> :: Premier Ready NFA asignada — Modo Competitivo Activo
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="hero-right fade-in">
+                <!-- Tactical Spec Card -->
+                <div class="tactical-frame" id="hero-tilt-card">
+                    <div class="frame-corner top-left"></div>
+                    <div class="frame-corner top-right"></div>
+                    <div class="frame-corner bottom-left"></div>
+                    <div class="frame-corner bottom-right"></div>
+
+                    <div class="tactical-card-inner">
+                        <div class="card-terminal-bar">
+                            <div class="terminal-dots">
+                                <span class="t-dot"></span>
+                                <span class="t-dot"></span>
+                                <span class="t-dot"></span>
+                            </div>
+                            <span class="terminal-caption">INVENTORY_NODE // ID_BL1NG-2026</span>
+                            <span class="terminal-ping">PING: 08ms</span>
+                        </div>
+
+                        <div class="card-visual-container">
+                            <img src="https://i.imgur.com/ZIwXSDR.jpeg" alt="Bl1ng Store Interface" class="card-asset-img">
+                            <div class="grid-layer"></div>
+                            <div class="radar-line"></div>
+                            <div class="asset-watermark">PREMIER_DEPLOYED</div>
+                            <div class="asset-hud-info">
+                                <span class="hud-status-point"></span>
+                                <span class="hud-text">STATUS :: SYSTEM READY</span>
+                            </div>
+                        </div>
+
+                        <div class="card-data-strip">
+                            <div class="data-block">
+                                <span class="d-label">TARGET</span>
+                                <span class="d-val">CS2 PREMIER / RANK READY</span>
+                            </div>
+                            <div class="data-block">
+                                <span class="d-label">ENCRYPTION</span>
+                                <span class="d-val cyan-code">SHA-256 DIRECT TICKET</span>
+                            </div>
+                            <div class="data-block">
+                                <span class="d-label">STOCK_STATE</span>
+                                <span class="d-val green-code">IMMEDIATE_AVAILABLE</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN DE ESPECIFICACIONES / VENTAJAS TÉCNICAS -->
+        <section id="ventajas" class="tactical-section">
+            <div class="section-title-wrap fade-in">
+                <div class="section-code">[ SPECIFICATION_STANDARDS ]</div>
+                <h2 class="section-heading">
+                    <span class="heading-prefix">//</span> INFRAESTRUCTURA BL<span class="cyan-accent">1</span>NG
+                </h2>
+                <p class="section-description">
+                    Garantizamos estándares rigurosos de entrega, estabilidad y protección para cada usuario en CS2.
+                </p>
+            </div>
+
+            <div class="specs-grid">
+                <div class="spec-card fade-in">
+                    <div class="spec-index">:: 01</div>
+                    <div class="spec-icon-box">
+                        <i data-lucide="shield-check"></i>
+                    </div>
+                    <h3 class="spec-title">Garantía Técnica 24h</h3>
+                    <p class="spec-text">
+                        Cada entrega cuenta con un período estricto de cobertura durante las primeras 24 horas continuas desde su recepción.
+                    </p>
+                    <div class="spec-foot-tag">[SYS_WARRANTY_ACTIVE]</div>
+                </div>
+
+                <div class="spec-card fade-in">
+                    <div class="spec-index">:: 02</div>
+                    <div class="spec-icon-box">
+                        <i data-lucide="zap"></i>
+                    </div>
+                    <h3 class="spec-title">Aprovisionamiento Flash</h3>
+                    <p class="spec-text">
+                        Flujo de atención directo sin fricciones. Desde la apertura del ticket hasta la entrega final transcurren menos de 5 minutos.
+                    </p>
+                    <div class="spec-foot-tag">[DISPATCH_OPTIMIZED]</div>
+                </div>
+
+                <div class="spec-card fade-in">
+                    <div class="spec-index">:: 03</div>
+                    <div class="spec-icon-box">
+                        <i data-lucide="cpu"></i>
+                    </div>
+                    <h3 class="spec-title">100% VAC Safe &amp; Legales</h3>
+                    <p class="spec-text">
+                        Los mejores cheats del mercado al mejor precio.
+                    </p>
+                    <div class="spec-foot-tag">[INTEGRITY_VERIFIED]</div>
+                </div>
+
+                <div class="spec-card fade-in">
+                    <div class="spec-index">:: 04</div>
+                    <div class="spec-icon-box">
+                        <i data-lucide="sliders"></i>
+                    </div>
+                    <h3 class="spec-title">Asistencia &amp; Calibración</h3>
+                    <p class="spec-text">
+                        Soporte técnico guiado paso a paso para la configuración, cambio de credenciales o instalación de utilidades.
+                    </p>
+                    <div class="spec-foot-tag">[TECHNICAL_SUPPORT]</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN DE CATÁLOGO DE PRODUCTOS (MANTENIENDO TODOS LOS ITEMS) -->
+        <section id="categorias" class="tactical-section catalog-wrapper">
+            <div class="section-title-wrap fade-in">
+                <div class="section-code">[ INVENTORY_CATALOG ]</div>
+                <h2 class="section-heading">
+                    <span class="heading-prefix">//</span> CATÁLOGO DE PRODUCTOS BL<span class="cyan-accent">1</span>NG
+                </h2>
+                <p class="section-description">
+                    Seleccioná el módulo de aprovisionamiento requerido. Todos los ítems cuentan con entrega inmediata vía ticket.
+                </p>
+            </div>
+
+            <!-- Filtros de Grado Militar -->
+            <div class="tactical-filters fade-in">
+                <button class="filter-tab active" data-filter="all">
+                    <span class="tab-indicator">■</span> TODOS LOS MÓDULOS <span class="tab-count">[03]</span>
+                </button>
+                <button class="filter-tab" data-filter="cuentas">
+                    <span class="tab-indicator">■</span> CUENTAS PREMIER <span class="tab-count">[02]</span>
+                </button>
+                <button class="filter-tab" data-filter="software">
+                    <span class="tab-indicator">■</span> BOOST ACC &amp; CHEATS <span class="tab-count">[01]</span>
+                </button>
+            </div>
+
+            <div class="cards-grid">
+                
+                <!-- PRODUCTO 01: Cheats y Boost Acc -->
+                <div class="tactical-product-card fade-in" data-category="software">
+                    <div class="product-top-bar">
+                        <span class="item-tag-code">[ITEM_01]</span>
+                        <span class="category-pill">// UTILITY_FPS</span>
+                    </div>
+
+                    <div class="product-header">
+                        <div class="product-title-row">
+                            <div class="title-glyph">
+                                <i data-lucide="terminal"></i>
+                            </div>
+                            <div>
+                                <h3 class="item-name">Cheats</h3>
+                                <span class="item-role">Neverlose &amp; Memesense</span>
+                            </div>
+                        </div>
+                        <p class="item-desc">
+                            Los mejores cheats y el mejor precio que hay en el mercado.
+                        </p>
+                    </div>
+
+                    <div class="item-spec-list">
+                        <div class="spec-row">
+                            <span class="spec-glyph">›</span>
+                            <span class="spec-text-main">Memesense Mensual</span>
+                            <span class="spec-status-tag">[OPTIMAL]</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-glyph">›</span>
+                            <span class="spec-text-main">CFgs etc de tu cheat a eleccion</span>
+                            <span class="spec-status-tag">[INCLUDED]</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-glyph">›</span>
+                            <span class="spec-text-main">100% VAC Safe / Legales</span>
+                            <span class="spec-status-tag cyan-tag">[SECURE]</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-glyph">›</span>
+                            <span class="spec-text-main">Asistencia en la instalación y calibración</span>
+                            <span class="spec-status-tag">[DIRECT]</span>
+                        </div>
+                    </div>
+
+                    <div class="card-action-bar">
+                        <a href="https://discord.gg/HJCc5GmuNV" target="_blank" class="tactical-order-btn">
+                            <span class="order-arrow">▸</span>
+                            <span>SOLICITAR CHEATS</span>
+                            <span class="order-ext">[TICKET]</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 02: Premier Ready (No Modificable / NFA) - DESTACADA -->
+                <div class="tactical-product-card featured fade-in" data-category="cuentas">
+                    <div class="featured-tactical-badge">
+                        <span class="badge-dot">■</span>
+                        <span>[MÁS BUSCADO] :: RECOMENDADO</span>
+                    </div>
+
+                    <div class="product-top-bar">
+                        <span class="item-tag-code">[ITEM_02]</span>
+                        <span class="category-pill cyan-pill">// PREMIER_FIXED_NFA</span>
+                    </div>
+
+                    <div class="product-header">
+                        <div class="product-title-row">
+                            <div class="title-glyph cyan-glyph">
+                                <i data-lucide="shield"></i>
+                            </div>
+                            <div>
+                                <h3 class="item-name">Premier Ready <span class="version-tag">(NFA)</span></h3>
+                                <span class="item-role">Cuenta Fija • Acceso Inmediato a Competitivo</span>
+                            </div>
+                        </div>
+                        <p class="item-desc">
+                            Cuentas listas para competir donde no se pueden modificar credenciales (Gmail y pass fijos). La solución más rápida y económica para jugar Premier.
+                        </p>
+                    </div>
+
+                    <div class="item-spec-list">
+                        <div class="spec-row">
+                            <span class="spec-glyph cyan">›</span>
+                            <span class="spec-text-main">Listas para modo Premier de inmediato</span>
+                            <span class="spec-status-tag cyan-tag">[RANK_ACTIVE]</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-glyph cyan">›</span>
+                            <span class="spec-text-main">Acceso inmediato y seguro asegurado</span>
+                            <span class="spec-status-tag">[VERIFIED]</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-glyph cyan">›</span>
+                            <span class="spec-text-main">Garantía técnica activa de 24 horas</span>
+                            <span class="spec-status-tag cyan-tag">[24H_COVER]</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-glyph cyan">›</span>
+                            <span class="spec-text-main">Soporte técnico y asistencia de inicio</span>
+                            <span class="spec-status-tag">[INCLUDED]</span>
+                        </div>
+                    </div>
+
+                    <div class="card-action-bar">
+                        <a href="https://discord.gg/HJCc5GmuNV" target="_blank" class="tactical-order-btn primary-tactical">
+                            <span class="order-arrow">■</span>
+                            <span>SOLICITAR CUENTA FIJA</span>
+                            <span class="order-ext">[INSTANT]</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 03: Premier Ready (Modificable / FA) -->
+                <div class="tactical-product-card fade-in" data-category="cuentas">
+                    <div class="product-top-bar">
+                        <span class="item-tag-code">[ITEM_03]</span>
+                        <span class="category-pill">// PREMIER_FULL_ACCESS_FA</span>
+                    </div>
+
+                    <div class="product-header">
+                        <div class="product-title-row">
+                            <div class="title-glyph">
+                                <i data-lucide="key"></i>
+                            </div>
+                            <div>
+                                <h3 class="item-name">Premier Ready <span class="version-tag">(FA)</span></h3>
+                                <span class="item-role">Full Acceso • 100% Modificable Personal</span>
+                            </div>
+                        </div>
+                        <p class="item-desc">
+                            Cuentas con estatus Premier donde <strong>podés modificar absolutamente todo</strong>: Correo Gmail propio, contraseña de acceso y protección Steam Guard.
+                        </p>
+                    </div>
+
+                    <div class="item-spec-list">
+                        <div class="spec-row">
+                            <span class="spec-glyph">›</span>
+                            <span class="spec-text-main">Listas para emparejamiento Premier</span>
+                            <span class="spec-status-tag">[READY]</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-glyph">›</span>
+                            <span class="spec-text-main">100% Modificables (Mail y Pass propio)</span>
+                            <span class="spec-status-tag cyan-tag">[FULL_CONTROL]</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-glyph">›</span>
+                            <span class="spec-text-main">Garantía activa de 24 horas</span>
+                            <span class="spec-status-tag">[24H_COVER]</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-glyph">›</span>
+                            <span class="spec-text-main">Atención prioritaria y soporte de migración</span>
+                            <span class="spec-status-tag">[PRIORITY]</span>
+                        </div>
+                    </div>
+
+                    <div class="card-action-bar">
+                        <a href="https://discord.gg/HJCc5GmuNV" target="_blank" class="tactical-order-btn">
+                            <span class="order-arrow">▸</span>
+                            <span>SOLICITAR FULL ACCESO</span>
+                            <span class="order-ext">[TICKET]</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SECCIÓN DE PROTOCOLO DE COMPRA -->
+        <section id="protocolo" class="tactical-section">
+            <div class="section-title-wrap fade-in">
+                <div class="section-code">[ TRANSACTION_FLOW ]</div>
+                <h2 class="section-heading">
+                    <span class="heading-prefix">//</span> PROTOCOLO DE ADQUISICIÓN
+                </h2>
+                <p class="section-description">
+                    Flujo secuencial estructurado para garantizar transparencia y velocidad de entrega.
+                </p>
+            </div>
+
+            <div class="protocol-grid">
+                <div class="protocol-step fade-in">
+                    <div class="step-terminal-header">
+                        <span class="step-num">STEP_01</span>
+                        <span class="step-status">[INIT]</span>
+                    </div>
+                    <div class="step-body">
+                        <h4>Acceso a la Terminal Discord</h4>
+                        <p>Hacé click en cualquiera de los enlaces e ingresá al servidor oficial de Bl1ng Store.</p>
+                    </div>
+                    <div class="step-code-preview">&gt; discord.gg/bl1ng // auth_connect</div>
+                </div>
+
+                <div class="protocol-step fade-in">
+                    <div class="step-terminal-header">
+                        <span class="step-num">STEP_02</span>
+                        <span class="step-status">[DISPATCH]</span>
+                    </div>
+                    <div class="step-body">
+                        <h4>Apertura de Ticket</h4>
+                        <p>En el canal de compras seleccionás el módulo que querés (Cuentas NFA, FA, Cheats o Boost ACC).</p>
+                    </div>
+                    <div class="step-code-preview">&gt; /ticket create --category [PRODUCT]</div>
+                </div>
+
+                <div class="protocol-step fade-in">
+                    <div class="step-terminal-header">
+                        <span class="step-num">STEP_03</span>
+                        <span class="step-status">[FULFILL]</span>
+                    </div>
+                    <div class="step-body">
+                        <h4>Pago y Entrega de Credenciales</h4>
+                        <p>Confirmás el método de pago disponible y el operador te despacha los datos en minutos con su garantía activa.</p>
+                    </div>
+                    <div class="step-code-preview">&gt; transaction_status: 200_OK // delivery_complete</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN FAQ -->
+        <section id="faq" class="tactical-section faq-wrapper">
+            <div class="section-title-wrap fade-in">
+                <div class="section-code">[ FAQ_DATABASE ]</div>
+                <h2 class="section-heading">
+                    <span class="heading-prefix">//</span> PREGUNTAS FRECUENTES
+                </h2>
+                <p class="section-description">
+                    Resolución técnica directa sobre garantías, métodos de pago y especificaciones.
+                </p>
+            </div>
+
+            <div class="faq-container">
+                <div class="faq-item fade-in">
+                    <button class="faq-question">
+                        <div class="faq-title-group">
+                            <span class="q-marker">Q_01 ::</span>
+                            <span class="q-label">¿Cómo se realizan los pagos?</span>
+                        </div>
+                        <div class="faq-toggle-bracket">[+]</div>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-inner">
+                            <p>
+                                Abrís un ticket de compra en nuestro Discord oficial, te confirmamos el valor final y te facilitamos múltiples medios de pago convenientes y seguros según tu país de residencia.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item fade-in">
+                    <button class="faq-question">
+                        <div class="faq-title-group">
+                            <span class="q-marker">Q_02 ::</span>
+                            <span class="q-label">¿Cuentan con garantía técnica?</span>
+                        </div>
+                        <div class="faq-toggle-bracket">[+]</div>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-inner">
+                            <p>
+                                Sí. Todos los productos y cuentas cuentan con una <strong>garantía técnica activa de 24 horas</strong> a partir del momento exacto del despacho para responder ante cualquier eventualidad.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item fade-in">
+                    <button class="faq-question">
+                        <div class="faq-title-group">
+                            <span class="q-marker">Q_03 ::</span>
+                            <span class="q-label">¿Existe soporte técnico posterior a la compra?</span>
+                        </div>
+                        <div class="faq-toggle-bracket">[+]</div>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-inner">
+                            <p>
+                                Por supuesto. Brindamos atención personalizada en tiempo real a través del sistema de tickets de Discord para resolver cualquier duda, configuración o consulta.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item fade-in">
+                    <button class="faq-question">
+                        <div class="faq-title-group">
+                            <span class="q-marker">Q_04 ::</span>
+                            <span class="q-label">¿Cuál es la diferencia técnica entre cuenta No Modificable y Modificable?</span>
+                        </div>
+                        <div class="faq-toggle-bracket">[+]</div>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-inner">
+                            <p>
+                                La cuenta <strong>No Modificable (NFA)</strong> posee credenciales predeterminadas fijas (no se cambia mail ni contraseña) y te permite competir al menor costo. La cuenta <strong>Modificable (FA)</strong> es Full Acceso: podés asignarle tu propio correo, modificar contraseña y asociar tu Steam Guard con control absoluto.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- BANNER TÁCTICO INFERIOR -->
+        <section class="tactical-section cta-section fade-in">
+            <div class="cta-terminal-panel">
+                <div class="cta-top-border">
+                    <span class="panel-code">[TERMINAL_DISPATCH // CS2]</span>
+                    <span class="panel-status">SYS_READY</span>
+                </div>
+                <div class="cta-body">
+                    <h2>¿LISTO PARA COMPETIR EN PREMIER?</h2>
+                    <p>
+                        Ingresá a la plataforma oficial de Bl<span class="cyan-accent">1</span>ng Store y solicitá tu producto con despacho inmediato y garantía asegurada.
+                    </p>
+                    <a href="https://discord.gg/HJCc5GmuNV" target="_blank" class="btn btn-primary-tactical">
+                        <span class="btn-bullet">■</span>
+                        <span>CONECTAR AL DISCORD OFICIAL</span>
+                        <span class="btn-arrow-corner">↗</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER TÁCTICO -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-brand-box">
+                    <div class="brand-line">
+                        <span class="brand-code">[SYS]</span>
+                        <span class="brand-name">BL<span class="cyan-accent">1</span>NG STORE</span>
+                    </div>
+                    <p class="brand-summary">
+                        Infraestructura especializada en cuentas de Counter-Strike 2 y Cheats del mismo.
+                    </p>
+                    <div class="brand-metrics">
+                        <span>EST. 2026</span>
+                        <span class="sep">/</span>
+                        <span>CS2 ENGINE READY</span>
+                        <span class="sep">/</span>
+                        <span class="cyan-code">ED1T_CYAN_V2</span>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <span class="col-title">// NAVEGACIÓN</span>
+                    <a href="#inicio">› Inicio</a>
+                    <a href="#categorias">› Catálogo Oficial</a>
+                    <a href="#ventajas">› Especificaciones</a>
+                    <a href="#protocolo">› Protocolo</a>
+                    <a href="#faq">› Preguntas Frecuentes</a>
+                </div>
+
+                <div class="footer-col">
+                    <span class="col-title">// SOPORTE TÉCNICO</span>
+                    <p class="col-info">Atención centralizada mediante sistema de tickets en Discord.</p>
+                    <a href="https://discord.gg/HJCc5GmuNV" target="_blank" class="footer-ticket-link">
+                        <span>[ABRIR TICKET 24/7]</span> <span>→</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="foot-copy">
+                    &copy; 2026 BL<span class="cyan-accent">1</span>NG STORE // TODOS LOS DERECHOS RESERVADOS.
+                </div>
+                <div class="foot-actions">
+                    <a href="#inicio">VOLVER ARRIBA [↑]</a>
+                    <span class="sep">/</span>
+                    <a href="https://discord.gg/HJCc5GmuNV" target="_blank">DISCORD SERVER</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botón Flotante Táctico de Discord -->
+    <a href="https://discord.gg/HJCc5GmuNV" target="_blank" class="tactical-floating-btn" id="floating-discord" title="Abrir Ticket en Discord">
+        <div class="floating-beacon"></div>
+        <span class="floating-icon">&lt;/&gt;</span>
+        <span class="floating-label">TICKET // DISCORD</span>
+    </a>
+
+    <!-- Scripts de interactividad y partículas -->
+    <script src="script.js"></script>
+</body>
+</html>
